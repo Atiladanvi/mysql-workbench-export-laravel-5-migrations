@@ -102,18 +102,8 @@ use Illuminate\Database\Migrations\Migration;
 
 class Create{tableNameCamelCase}Table extends Migration
 {{
-    /**
-     * Schema table name to migrate
-     * @var string
-     */
     public $tableName = '{tableName}';
 
-    /**
-     * Run the migrations.
-     * @table {tableName}
-     *
-     * @return void
-     */
     public function up()
     {{
         Schema::create($this->tableName, function (Blueprint $table) {{
@@ -127,11 +117,6 @@ foreignKeyTemplate = '''
 '''
 
 migrationDownTemplate = '''
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
 '''
